@@ -9,6 +9,7 @@ export const routes = express.Router();
 
 
 routes.post('/feedbacks', async(req, res) => {
+    console.log('teste')
     const { type, comment, screenshot } = req.body;
     
     const prismaFeedbacksRepository =  new PrismaFeedbacksRepository;

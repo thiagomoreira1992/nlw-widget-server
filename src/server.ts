@@ -5,7 +5,7 @@ import { routes } from './routes';
 const app = express();
 
 app.use(cors({
-    origin: '*:*'
+    credentials: false
 }));
 app.use(express.json());
 app.use(routes);
